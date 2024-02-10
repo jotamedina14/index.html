@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Yonathan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="mi foto.jpeg" alt="">
+            </div>
+            <h1>Yonathan Blanco</h1>
+            <h2>Programador de Software - JUNIOR</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Yonathan Blanco.</span> Soy un apasionado programador junior con una sólida formación académica en informática y un compromiso constante con el aprendizaje y el desarrollo profesional. Mi objetivo es contribuir de manera efectiva a proyectos de desarrollo de software, aprovechando mis conocimientos en programación y mi entusiasmo por enfrentar nuevos desafíos tecnológicos. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            14-06-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3114724033
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            yonathan14lopezblanco@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            git hub
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            San gil, Colombia
+                        </li>
+                        <li>
+                            <strong>Estado</strong>
+                            <span>ESTUDIANDO</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="soyundesarrollador.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Portafolio</h3>
+                        <a class="link-gitHub" href="https://jotamedina14.github.io/formulario_1/" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Fastmunch.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Fast munch</h3>
+                        <a class="link-gitHub" href="https://jotamedina14.github.io/men-restaurante-/" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="calculadora.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>calculadora</h3>
+                        <a class="link-gitHub" href="https://github.com/jotamedina14/calculadora.git" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="accesorios.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>accesorios</h3>
+                        <p>tecnologicos</p>
+                        <a class="link-gitHub" href="https://jotamedina14.github.io/catalogo-accesorios/" target="_blank">Visitar</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="formulario.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>formulario</h3>
+                        <a class="link-gitHub" href="https://jotamedina14.github.io/formulario/" target="_blank">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
